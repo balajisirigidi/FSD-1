@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function Voter(name, age) {
+      this.name = name;
+      this.age = age;
+      this.canVote = function() {
+        return this.age >= 18;
+      };
+      Object.defineProperty(this, "status", {
+        get: function() {
+          return this.canVote() ? "Eligible" : "Not Eligible";
+        }
+      });
+    }
+
+    let voter1 = new Voter("Balaji", 20);
+    document.write(`Name: ${voter1.name}<br>Age: ${voter1.age}<br>Status: ${voter1.status}`);
+  </script>
+</body>
+</html>

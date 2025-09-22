@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Simple Selectors */
+    p { color: navy; }               /* element */
+    #unique { font-weight: bold; }   /* id */
+    .highlight { background: yellow; } /* class */
+    h1, h2 { text-align: center; }   /* group */
+    * { margin: 0; }                 /* universal */
+
+    /* Combinator Selectors */
+    div p { color: green; }          /* descendant */
+    div > p { font-style: italic; }  /* child */
+    h2 + p { color: red; }           /* adjacent sibling */
+    h2 ~ p { font-size: 18px; }      /* general sibling */
+
+    /* Pseudo-class */
+    a:hover { color: orange; }
+
+    /* Pseudo-element */
+    p::first-line { font-weight: bold; }
+
+    /* Attribute Selector */
+    input[type="text"] { border: 2px solid blue; }
+  </style>
+</head>
+<body>
+  <h1>Selectors Demo</h1>
+  <h2>Heading</h2>
+  <p>Paragraph after h2</p>
+  <p class="highlight">Highlighted paragraph</p>
+  <div>
+    <p>Child paragraph</p>
+  </div>
+  <a href="#">Hover over me</a>
+  <input type="text" placeholder="Type here">
+</body>
+</html>

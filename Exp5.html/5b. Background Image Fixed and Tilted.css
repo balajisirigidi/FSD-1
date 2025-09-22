@@ -1,0 +1,8 @@
+body {
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg); /* Horizontal flip */
+}

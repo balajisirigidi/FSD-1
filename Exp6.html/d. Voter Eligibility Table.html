@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let name = prompt("Enter your name:");
+    let age = parseInt(prompt("Enter your age:"));
+    let canVote = age >= 18 ? "Eligible to Vote" : "Not Eligible";
+
+    document.write("<table border='1'>");
+    document.write("<tr><th>Name</th><th>Age</th><th>Status</th></tr>");
+    document.write(`<tr><td>${name}</td><td>${age}</td><td>${canVote}</td></tr>`);
+    document.write("</table>");
+  </script>
+</body>
+</html>
